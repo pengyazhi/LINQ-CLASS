@@ -146,9 +146,7 @@ namespace LinqLabs.作業
         int cntPage = 0;
         //判斷上或下一頁是否為第一次按
         bool isFirstClick = true;
-
         
-
         private void NextPages_Click(object sender, EventArgs e)
         {
             
@@ -167,10 +165,19 @@ namespace LinqLabs.作業
             {
                 isFirstClick = false;
             }
-
-            IEnumerable<NWDataSet.ProductsRow> q = from p in this.nwDataSet1.Products.Skip(cntPage* showRows).Take(showRows)
-                    select p;
-            this.dataGridView2.DataSource = q.ToList();
+            double totalPage = Math.Ceiling((double)nwDataSet1.Products.Count / (double)showRows);
+            
+            if(cntPage < totalPage)
+            {
+                IEnumerable<NWDataSet.ProductsRow> q = from p in this.nwDataSet1.Products.Skip(cntPage * showRows).Take(showRows)
+                                                       select p;
+                this.dataGridView2.DataSource = q.ToList();
+            }
+            else
+            {
+                MessageBox.Show("已經為最後一頁");
+            }
+            
             
         }
 
