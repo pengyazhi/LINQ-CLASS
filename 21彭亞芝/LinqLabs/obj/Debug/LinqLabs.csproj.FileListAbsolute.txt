@@ -109,33 +109,84 @@ D:\Fion Data\MSIT 上課\ADO LINQ (疫情上課)\LINQ\LinqLabs (StartUp)\LinqLab
 D:\Fion Data\MSIT 上課\ADO LINQ (疫情上課)\LINQ\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
 D:\Fion Data\MSIT 上課\ADO LINQ (疫情上課)\LINQ\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.exe
 D:\Fion Data\MSIT 上課\ADO LINQ (疫情上課)\LINQ\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.pdb
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\bin\Debug\LinqLabs.exe.config
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\bin\Debug\LinqLabs.exe
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\bin\Debug\LinqLabs.pdb
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.exe
-C:\Users\User\Desktop\LinqLabs (StartUp)\LinqLabs\obj\Debug\LinqLabs.pdb
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.exe.config
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.exe
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.pdb
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.exe
-C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\bin\Debug\LinqLabs.exe
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.exe
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\shared\LINQ\LinqLabs (Solution)\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.exe
+C:\Users\User\Desktop\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.exe
+C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.exe
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.exe
+C:\LINQ\LINQ-CLASS\21彭亞芝 LINQ HW\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.exe
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.exe
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\MyHomeWork.Frm作業_2.resources
