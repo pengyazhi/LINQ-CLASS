@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace MyHomeWork
 {
     public partial class Frm作業_2 : Form
@@ -22,6 +22,7 @@ namespace MyHomeWork
             //LoadSelectedYearQuarter();
         }
         int selectYear;
+        IEnumerable<int> month;
         private void LoadSelectedYearQuarter()
         {
             comboBox2.Items.Clear();
@@ -31,7 +32,7 @@ namespace MyHomeWork
                 return;
             }
             //selectYear = Convert.ToInt32(comboBox3.Text);
-            IEnumerable<int> month = this.awDataSet1.ProductPhoto.Where(n => n.ModifiedDate.Year == selectYear).Select(n => n.ModifiedDate.Month);
+            month = this.awDataSet1.ProductPhoto.Where(n => n.ModifiedDate.Year == selectYear).Select(n => n.ModifiedDate.Month);
             List<int> months = month.Distinct().ToList();
             foreach (int m in months)
             {
@@ -119,6 +120,8 @@ namespace MyHomeWork
 
         private void button5_Click(object sender, EventArgs e)
         {
+            
+            comboBox2.Text = "請選擇";
             selectYear = Convert.ToInt32(comboBox3.Text);
             var q = this.awDataSet1.ProductPhoto.Where(n => n.ModifiedDate.Year == selectYear);
             dataGridView1.DataSource = q.ToList();
@@ -132,9 +135,42 @@ namespace MyHomeWork
 
         private void button10_Click(object sender, EventArgs e)
         {
-            var q =this.awDataSet1.ProductPhoto.Where(y=>y.ModifiedDate.Year == Convert.ToInt32(comboBox3.Text)) && y.ModifiedDate.Year == Convert.ToInt32(comboBox2.Text))
+            IEnumerable<AWDataSet.ProductPhotoRow> q = this.awDataSet1.ProductPhoto.Where(y => y.ModifiedDate.Year == Convert.ToInt32(comboBox3.Text) &&
+               ((comboBox2.Text == "第一季" && (y.ModifiedDate.Month == 1 || y.ModifiedDate.Month == 2 || y.ModifiedDate.Month == 3)) ||
+               (comboBox2.Text == "第二季" && (y.ModifiedDate.Month == 4 || y.ModifiedDate.Month == 5 || y.ModifiedDate.Month == 6)) ||
+               (comboBox2.Text == "第三季" && (y.ModifiedDate.Month == 7 || y.ModifiedDate.Month == 8 || y.ModifiedDate.Month == 9)) ||
+               (comboBox2.Text == "第四季" && (y.ModifiedDate.Month == 10 || y.ModifiedDate.Month == 11 || y.ModifiedDate.Month == 12))));
+
+            var qq = q.Select(n => new {
+                n.ProductPhotoID,
+                n.ThumbNailPhoto,
+                n.ThumbnailPhotoFileName,
+                n.LargePhoto,
+                n.ModifiedDate,
+                Total = q.Count() });
+
+            dataGridView1.DataSource = qq.ToList();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0)
+            {
+                DataGridViewRow selectRow = dataGridView1.Rows[e.RowIndex];
+                object ph = selectRow.Cells["LargePhoto"].Value;
+
+                IEnumerable<AWDataSet.ProductPhotoRow> q = from p in this.awDataSet1.ProductPhoto
+                        where p.LargePhoto == ph
+                        select p;
+               foreach(AWDataSet.ProductPhotoRow dataRow in q)
+                {
+                    byte[] bytes= dataRow.ThumbNailPhoto;
+                    MemoryStream ms = new MemoryStream(bytes);
+                    pictureBox1.Image = Image.FromStream(ms);
+                }
 
 
+            }
         }
     }
 }
