@@ -367,9 +367,9 @@ namespace Starter
                     {
                         ID = p.ProductID,
                         Name = p.ProductName,
-                        p.UnitPrice,
+                        UnitPrice = $"{p.UnitPrice:c2}",
                         p.UnitsInStock,
-                        Toatl = p.UnitPrice* p.UnitsInStock
+                        Toatl = $"{p.UnitPrice * p.UnitsInStock:c2}"
                     };
             dataGridView2.DataSource = r.ToList();
         }
@@ -377,6 +377,25 @@ namespace Starter
         private void button40_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {
+            string s = "dadfgr";
+
+            //使用s.WordCount();更像是字串本身就有WordCount的擴充方法
+            int count = s.WordCount(); // ==MyStringExtend.WordCount(s); 一般使用靜態類別的方法
+            MessageBox.Show($"Count : {count}");
+
+            s = "ggggggg";
+            count = s.WordCount();
+            MessageBox.Show($"Count : {count}");
+
+            //=============================================
+            string s1 = "wqefdsdsf";
+            //使用字串的擴充方法Char來找出字串帶入的index的位置
+            char ch = s1.Char(4);
+            MessageBox.Show($"ch : {ch}");
         }
     }
 }
@@ -413,4 +432,29 @@ public class MyPoint
         Y = y;
     }
 
+}
+
+//嚴重性 程式碼	說明	專案	檔案	行	隱藏項目狀態
+//錯誤	CS0509	'MyString': 無法衍生自密封類型 'string'	LinqLabs
+//使用繼承會有兩個錯誤:
+//1.父類別為sealed無法被繼承
+//2.使用的型別不一致
+//public class MyString:String
+//{
+
+//}
+
+//擴充方法的條件:
+//1.必須是public 且 static 
+//2.方法帶進的參數前面要加this
+public static class MyStringExtend
+{
+    public static int WordCount(this string s)
+    {
+        return s.Length;
+    }
+    public static char Char(this string s,int index)
+    {
+        return s[index];
+    }
 }

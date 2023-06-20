@@ -207,3 +207,6 @@ D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\D
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.exe
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.pdb
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\System.dll
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CopyComplete
+C:\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_3.resources

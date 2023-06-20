@@ -17,6 +17,13 @@ namespace Starter
             InitializeComponent();
         }
 
-       
+        private void button15_Click(object sender, EventArgs e)
+        {
+            int[] nums = { 1, 2, 3, 4, 5, 6, 7, 8, 9 ,10};
+            var q = from n in nums
+                    group n by n % 2;
+            dataGridView1.DataSource = q.ToList();
+                   
+        }
     }
 }

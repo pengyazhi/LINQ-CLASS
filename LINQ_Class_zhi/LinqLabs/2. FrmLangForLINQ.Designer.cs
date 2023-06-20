@@ -311,6 +311,7 @@
             this.button32.TabIndex = 20;
             this.button32.Text = "擴充方法";
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // groupBox1
             // 

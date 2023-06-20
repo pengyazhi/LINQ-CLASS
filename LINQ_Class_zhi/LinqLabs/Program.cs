@@ -25,9 +25,9 @@ namespace Starter
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new FrmHelloLinq());
-           Application.Run(new FrmLangForLINQ());
+           //Application.Run(new FrmLangForLINQ());
             //Application.Run(new FrmLINQ架構介紹_InsideLINQ());
-            //Application.Run(new FrmLINQ_To_XXX());
+            Application.Run(new FrmLINQ_To_XXX());
             //Application.Run(new FrmLinq_To_Entity());
         }
     }

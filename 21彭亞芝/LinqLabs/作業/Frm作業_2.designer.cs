@@ -108,7 +108,7 @@ namespace MyHomeWork
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(822, 469);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 103;
             this.pictureBox1.TabStop = false;
             // 
@@ -152,7 +152,6 @@ namespace MyHomeWork
             this.dataGridView1.Size = new System.Drawing.Size(591, 467);
             this.dataGridView1.TabIndex = 71;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // splitContainer2
             // 

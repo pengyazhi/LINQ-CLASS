@@ -78,14 +78,12 @@ namespace MyHomeWork
             this.productProductPhotoTableAdapter1.Fill(this.awDataSet1.ProductProductPhoto);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void button11_Click(object sender, EventArgs e)
         {
+            this.lblMaster.Text = "Master";
             this.dataGridView1.DataSource = this.awDataSet1.ProductPhoto;
+            int rows = dataGridView1.Rows.Count;
+            this.lblMaster.Text += $"\n  {rows} 個產品";
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -109,6 +107,7 @@ namespace MyHomeWork
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.lblMaster.Text = "Master";
             dataGridView1.DataSource = this.awDataSet1.ProductPhoto;
             //IEnumerable<AWDataSet.ProductPhotoRow> q  = from d in this.awDataSet1.ProductPhoto
             //                                       where d.ModifiedDate > dateTimePicker1.Value && d.ModifiedDate < dateTimePicker2.Value
@@ -116,15 +115,17 @@ namespace MyHomeWork
 
             IEnumerable<AWDataSet.ProductPhotoRow> q = this.awDataSet1.ProductPhoto.Where(d =>d.ModifiedDate > dateTimePicker1.Value && d.ModifiedDate < dateTimePicker2.Value);
             dataGridView1.DataSource = q.ToList();
+            this.lblMaster.Text += $"\n {q.Count()}個產品";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+            this.lblMaster.Text = "Master";
             comboBox2.Text = "請選擇";
             selectYear = Convert.ToInt32(comboBox3.Text);
-            var q = this.awDataSet1.ProductPhoto.Where(n => n.ModifiedDate.Year == selectYear);
+            IEnumerable<AWDataSet.ProductPhotoRow> q = this.awDataSet1.ProductPhoto.Where(n => n.ModifiedDate.Year == selectYear);
             dataGridView1.DataSource = q.ToList();
+            this.lblMaster.Text += $"\n {q.Count()}個產品";
         }
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
@@ -135,21 +136,23 @@ namespace MyHomeWork
 
         private void button10_Click(object sender, EventArgs e)
         {
+            this.lblMaster.Text = "Master";
             IEnumerable<AWDataSet.ProductPhotoRow> q = this.awDataSet1.ProductPhoto.Where(y => y.ModifiedDate.Year == Convert.ToInt32(comboBox3.Text) &&
                ((comboBox2.Text == "第一季" && (y.ModifiedDate.Month == 1 || y.ModifiedDate.Month == 2 || y.ModifiedDate.Month == 3)) ||
                (comboBox2.Text == "第二季" && (y.ModifiedDate.Month == 4 || y.ModifiedDate.Month == 5 || y.ModifiedDate.Month == 6)) ||
                (comboBox2.Text == "第三季" && (y.ModifiedDate.Month == 7 || y.ModifiedDate.Month == 8 || y.ModifiedDate.Month == 9)) ||
                (comboBox2.Text == "第四季" && (y.ModifiedDate.Month == 10 || y.ModifiedDate.Month == 11 || y.ModifiedDate.Month == 12))));
 
-            var qq = q.Select(n => new {
-                n.ProductPhotoID,
-                n.ThumbNailPhoto,
-                n.ThumbnailPhotoFileName,
-                n.LargePhoto,
-                n.ModifiedDate,
-                Total = q.Count() });
-
-            dataGridView1.DataSource = qq.ToList();
+            //var qq = q.Select(n => new {
+            //    n.ProductPhotoID,
+            //    n.ThumbNailPhoto,
+            //    n.ThumbnailPhotoFileName,
+            //    n.LargePhoto,
+            //    n.ModifiedDate,
+            //    Total = q.Count() });
+            int totalProduct = q.Count();
+            this.lblMaster.Text += $"\n  {totalProduct} 個產品";
+            dataGridView1.DataSource = q.ToList();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
