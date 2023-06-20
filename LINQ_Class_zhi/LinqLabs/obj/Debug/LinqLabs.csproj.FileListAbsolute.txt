@@ -139,3 +139,18 @@ C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateRes
 C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
 C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.exe
 C:\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.pdb
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.exe.config
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.exe
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\bin\Debug\LinqLabs.pdb
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.exe
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\LINQ_Class_zhi\LinqLabs\obj\Debug\LinqLabs.pdb
