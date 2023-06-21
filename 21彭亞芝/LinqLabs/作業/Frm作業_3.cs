@@ -54,9 +54,9 @@ namespace LinqLabs.作業
                                                               n.Math,
                                                               n.Chi,
                                                               n.Eng,
-                                                              Max = (n.Chi >= n.Math && n.Chi >= n.Eng) ? "Chi" : (n.Eng >= n.Math && n.Eng >= n.Chi) ? "Eng" : "Math",
-                                                              Min = (n.Chi <= n.Math && n.Chi <= n.Eng) ? "Chi" : (n.Eng <= n.Math && n.Eng <= n.Chi) ? "Eng" : "Math",
-                                                              Total = n.Math + n.Chi * 2 + n.Eng,
+                                                              Max = Max(new[] {n.Math,n.Chi,n.Eng})/* (n.Chi >= n.Math && n.Chi >= n.Eng) ? "Chi" : (n.Eng >= n.Math && n.Eng >= n.Chi) ? "Eng" : "Math"*/,
+                                                               Min = (n.Chi <= n.Math && n.Chi <= n.Eng) ? "Chi" : (n.Eng <= n.Math && n.Eng <= n.Chi) ? "Eng" : "Math",
+                                                               Total = n.Math + n.Chi * 2 + n.Eng,
                                                               Averge = (n.Math + n.Chi * 2 + n.Eng) / 4,
                                                               Grade = ((n.Math + n.Chi * 2 + n.Eng) / 4) >90?"A": ((n.Math + n.Chi * 2 + n.Eng) / 4)>80?"B"
                                                                                                                                                           : ((n.Math + n.Chi * 2 + n.Eng) / 4)>70?"C"
@@ -66,33 +66,19 @@ namespace LinqLabs.作業
                                                               Rank = ++rank 
                                                           });
             dataGridView1.DataSource = q.ToList();
-            // Rank by 三科成績加總 並排序
-            // 國文權重加倍
-            // 依平均分計算 Grade & Pass 
-            //Grade A =90~100 B = 80~89 C = 70~79 D = 60~69 E < 60
-            //Pass > 60 
-            // NOTE Rank
-            //this.lblMaster.Text = "Rank";
-            //this.lblDetails.Text = "";
-
-            //int rank = 0;
-            //var q = from s in students_scores....
-            //        select new
-            //        {
-            //            s.Name,
-            //            s.Gender,
-            //            s.Class,
-            //            s.Chi,
-            //            s.Eng,
-            //            s.Math,
-            //            Min...
-            //            Max....Avg = ...
-            //            Sum =
-            //            Weight = ...,
-            //            ...
-            //            Pass = ..Grade
-            //            Rank = ++rank,
-            //        };
+           
+        }
+        int Max(int [] nums)
+        {
+            int max = 0;
+            foreach (int row in nums)
+            {
+                if(row> max)
+                {
+                    max = row;
+                }
+            }
+            return max;
         }
         int nameID = 0;
         private void button33_Click(object sender, EventArgs e)

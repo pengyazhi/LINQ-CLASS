@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product>
+    <ProductName>Chai  3333333</ProductName>
+    <UnitPrice>18.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Chang 456</ProductName>
+    <UnitPrice>19.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Aniseed Syrup</ProductName>
+    <UnitPrice>10.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Chef Anton's Cajun Seasoning</ProductName>
+    <UnitPrice>22.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Chef Anton's Gumbo Mix</ProductName>
+    <UnitPrice>21.3500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Grandma's Boysenberry Spread</ProductName>
+    <UnitPrice>25.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Uncle Bob's Organic Dried Pears</ProductName>
+    <UnitPrice>30.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Northwoods Cranberry Sauce</ProductName>
+    <UnitPrice>40.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Mishi Kobe Niku</ProductName>
+    <UnitPrice>97.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Ikura</ProductName>
+    <UnitPrice>31.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Queso Cabrales</ProductName>
+    <UnitPrice>21.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Queso Manchego La Pastora</ProductName>
+    <UnitPrice>38.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Konbu</ProductName>
+    <UnitPrice>6.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Tofu</ProductName>
+    <UnitPrice>23.2500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Genen Shouyu</ProductName>
+    <UnitPrice>15.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Pavlova</ProductName>
+    <UnitPrice>17.4500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Alice Mutton</ProductName>
+    <UnitPrice>39.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Carnarvon Tigers</ProductName>
+    <UnitPrice>62.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Teatime Chocolate Biscuits</ProductName>
+    <UnitPrice>9.2000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Sir Rodney's Marmalade</ProductName>
+    <UnitPrice>81.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Sir Rodney's Scones</ProductName>
+    <UnitPrice>10.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gustaf's Knackebrod</ProductName>
+    <UnitPrice>21.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Tunnbrod</ProductName>
+    <UnitPrice>9.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Guarana Fantastica</ProductName>
+    <UnitPrice>4.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>NuNuCa Nus-Nougat-Creme</ProductName>
+    <UnitPrice>14.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gumbar Gummibarchen</ProductName>
+    <UnitPrice>31.2300</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Schoggi Schokolade</ProductName>
+    <UnitPrice>43.9000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Rossle Sauerkraut</ProductName>
+    <UnitPrice>45.6000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Thuringer Rostbratwurst</ProductName>
+    <UnitPrice>123.7900</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Nord-Ost Matjeshering</ProductName>
+    <UnitPrice>25.8900</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gorgonzola Telino</ProductName>
+    <UnitPrice>12.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Mascarpone Fabioli</ProductName>
+    <UnitPrice>32.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Geitost</ProductName>
+    <UnitPrice>2.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Sasquatch Ale</ProductName>
+    <UnitPrice>14.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Steeleye Stout</ProductName>
+    <UnitPrice>18.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Inlagd Sill</ProductName>
+    <UnitPrice>19.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gravad lax</ProductName>
+    <UnitPrice>26.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Cote de Blaye</ProductName>
+    <UnitPrice>263.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Chartreuse verte</ProductName>
+    <UnitPrice>18.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Boston Crab Meat</ProductName>
+    <UnitPrice>18.4000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Jack's New England Clam Chowder</ProductName>
+    <UnitPrice>9.6500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Singaporean Hokkien Fried Mee</ProductName>
+    <UnitPrice>14.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Ipoh Coffee</ProductName>
+    <UnitPrice>46.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gula Malacca</ProductName>
+    <UnitPrice>19.4500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Rogede sild</ProductName>
+    <UnitPrice>9.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Spegesild</ProductName>
+    <UnitPrice>12.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Zaanse koeken</ProductName>
+    <UnitPrice>9.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Chocolade</ProductName>
+    <UnitPrice>12.7500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Maxilaku</ProductName>
+    <UnitPrice>20.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Valkoinen suklaa</ProductName>
+    <UnitPrice>16.2500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Manjimup Dried Apples</ProductName>
+    <UnitPrice>53.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Filo Mix</ProductName>
+    <UnitPrice>7.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Perth Pasties</ProductName>
+    <UnitPrice>32.8000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Tourtiere</ProductName>
+    <UnitPrice>7.4500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Pate chinois</ProductName>
+    <UnitPrice>24.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gnocchi di nonna Alice</ProductName>
+    <UnitPrice>38.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Ravioli Angelo</ProductName>
+    <UnitPrice>19.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Escargots de Bourgogne</ProductName>
+    <UnitPrice>13.2500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Raclette Courdavault</ProductName>
+    <UnitPrice>55.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Camembert Pierrot</ProductName>
+    <UnitPrice>34.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Sirop d'erable</ProductName>
+    <UnitPrice>28.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Tarte au sucre</ProductName>
+    <UnitPrice>49.3000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Vegie-spread</ProductName>
+    <UnitPrice>43.9000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Wimmers gute Semmelknodel</ProductName>
+    <UnitPrice>33.2500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Louisiana Fiery Hot Pepper Sauce</ProductName>
+    <UnitPrice>21.0500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Louisiana Hot Spiced Okra</ProductName>
+    <UnitPrice>17.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Laughing Lumberjack Lager</ProductName>
+    <UnitPrice>14.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Scottish Longbreads</ProductName>
+    <UnitPrice>12.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Gudbrandsdalsost</ProductName>
+    <UnitPrice>36.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Outback Lager</ProductName>
+    <UnitPrice>15.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Flotemysost</ProductName>
+    <UnitPrice>21.5000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Mozzarella di Giovanni</ProductName>
+    <UnitPrice>34.8000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Rod Kaviar</ProductName>
+    <UnitPrice>15.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Longlife Tofu</ProductName>
+    <UnitPrice>10.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Rhonbrau Klosterbier</ProductName>
+    <UnitPrice>7.7500</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Lakkalikoori</ProductName>
+    <UnitPrice>18.0000</UnitPrice>
+  </Product>
+  <Product>
+    <ProductName>Original Frankfurter grune Sose</ProductName>
+    <UnitPrice>13.0000</UnitPrice>
+  </Product>
+</Products>
