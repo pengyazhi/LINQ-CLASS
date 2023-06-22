@@ -46,26 +46,26 @@ namespace LinqLabs.作業
             this.lblMaster.Text = "Rank";
             this.lblDetails.Text = "";
             // 統計 每個學生個人成績
-            var q = students_scores.OrderByDescending(n => n.Chi * 2 + n.Eng + n.Math).
-                                                          Select(n => new {
-                                                              n.Name,
-                                                              n.Gender,
-                                                              n.Class,
-                                                              n.Math,
-                                                              n.Chi,
-                                                              n.Eng,
-                                                              Max = Max(new[] {n.Math,n.Chi,n.Eng})/* (n.Chi >= n.Math && n.Chi >= n.Eng) ? "Chi" : (n.Eng >= n.Math && n.Eng >= n.Chi) ? "Eng" : "Math"*/,
-                                                               Min = (n.Chi <= n.Math && n.Chi <= n.Eng) ? "Chi" : (n.Eng <= n.Math && n.Eng <= n.Chi) ? "Eng" : "Math",
-                                                               Total = n.Math + n.Chi * 2 + n.Eng,
-                                                              Averge = (n.Math + n.Chi * 2 + n.Eng) / 4,
-                                                              Grade = ((n.Math + n.Chi * 2 + n.Eng) / 4) >90?"A": ((n.Math + n.Chi * 2 + n.Eng) / 4)>80?"B"
-                                                                                                                                                          : ((n.Math + n.Chi * 2 + n.Eng) / 4)>70?"C"
-                                                                                                                                                          : ((n.Math + n.Chi * 2 + n.Eng) / 4)>60?"D"
-                                                                                                                                                          :"E",
-                                                              Pass = ((n.Math + n.Chi * 2 + n.Eng) / 4) > 60 ? "Pass" : "",
-                                                              Rank = ++rank 
-                                                          });
-            dataGridView1.DataSource = q.ToList();
+            //var q = students_scores.OrderByDescending(n => n.Chi * 2 + n.Eng + n.Math).
+            //                                              Select(n => new {
+            //                                                  n.Name,
+            //                                                  n.Gender,
+            //                                                  n.Class,
+            //                                                  n.Math,
+            //                                                  n.Chi,
+            //                                                  n.Eng,
+            //                                                  Max = Max(new[] {n.Math,n.Chi,n.Eng})/* (n.Chi >= n.Math && n.Chi >= n.Eng) ? "Chi" : (n.Eng >= n.Math && n.Eng >= n.Chi) ? "Eng" : "Math"*/,
+            //                                                   Min = (n.Chi <= n.Math && n.Chi <= n.Eng) ? "Chi" : (n.Eng <= n.Math && n.Eng <= n.Chi) ? "Eng" : "Math",
+            //                                                   Total = n.Math + n.Chi * 2 + n.Eng,
+            //                                                  Averge = (n.Math + n.Chi * 2 + n.Eng) / 4,
+            //                                                  Grade = ((n.Math + n.Chi * 2 + n.Eng) / 4) >90?"A": ((n.Math + n.Chi * 2 + n.Eng) / 4)>80?"B"
+            //                                                                                                                                              : ((n.Math + n.Chi * 2 + n.Eng) / 4)>70?"C"
+            //                                                                                                                                              : ((n.Math + n.Chi * 2 + n.Eng) / 4)>60?"D"
+            //                                                                                                                                              :"E",
+            //                                                  Pass = ((n.Math + n.Chi * 2 + n.Eng) / 4) > 60 ? "Pass" : "",
+            //                                                  Rank = ++rank 
+            //                                              });
+            //dataGridView1.DataSource = q.ToList();
            
         }
         int Max(int [] nums)

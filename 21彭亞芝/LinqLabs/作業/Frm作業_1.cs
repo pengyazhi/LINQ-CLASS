@@ -74,6 +74,7 @@ namespace LinqLabs.作業
 
         private void button4_Click(object sender, EventArgs e)
         {
+            
             Load_C_Data();
             IEnumerable<FileInfo> q =from large in files
                    where large.Length >10000
