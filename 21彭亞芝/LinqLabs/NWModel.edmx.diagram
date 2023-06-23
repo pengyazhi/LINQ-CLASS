@@ -6,15 +6,12 @@
     <edmx:Diagrams>
       <Diagram DiagramId="ce649ec3ea154c55bbdb578fdee588ac" Name="Diagram1">
         <EntityTypeShape EntityType="NorthwindModel.Order" Width="1.5" PointX="0.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="NorthwindModel.Product" Width="1.5" PointX="2.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="NorthwindModel.Product" Width="1.5" PointX="7" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="NorthwindModel.Order_Detail" Width="1.5" PointX="4.75" PointY="1.25" />
         <AssociationConnector Association="NorthwindModel.FK_Order_Details_Orders" />
         <AssociationConnector Association="NorthwindModel.FK_Order_Details_Products" />
-        <EntityTypeShape EntityType="NorthwindModel.Order_Details_Extended" Width="1.5" PointX="0.75" PointY="8.75" />
-        <EntityTypeShape EntityType="NorthwindModel.Order_Subtotal" Width="1.5" PointX="2.75" PointY="8.75" />
-        <EntityTypeShape EntityType="NorthwindModel.Orders_Qry" Width="1.5" PointX="4.75" PointY="8.75" />
-        <EntityTypeShape EntityType="NorthwindModel.Sales_by_Category" Width="1.5" PointX="9.75" PointY="9.75" />
-        <EntityTypeShape EntityType="NorthwindModel.Sales_Totals_by_Amount" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="NorthwindModel.Category" Width="1.5" PointX="0.75" PointY="5.125" />
+        <AssociationConnector Association="NorthwindModel.FK_Products_Categories" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

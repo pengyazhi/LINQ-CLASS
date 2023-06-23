@@ -48,70 +48,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Order_Details_Extendeds">
-      <EntityTypeMapping TypeName="NorthwindModel.Order_Details_Extended">
-        <MappingFragment StoreEntitySet="Order Details Extended">
-          <ScalarProperty Name="ExtendedPrice" ColumnName="ExtendedPrice" />
-          <ScalarProperty Name="Discount" ColumnName="Discount" />
-          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
-          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Order_Subtotals">
-      <EntityTypeMapping TypeName="NorthwindModel.Order_Subtotal">
-        <MappingFragment StoreEntitySet="Order Subtotals">
-          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Orders_Qries">
-      <EntityTypeMapping TypeName="NorthwindModel.Orders_Qry">
-        <MappingFragment StoreEntitySet="Orders Qry">
-          <ScalarProperty Name="Country" ColumnName="Country" />
-          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
-          <ScalarProperty Name="Region" ColumnName="Region" />
-          <ScalarProperty Name="City" ColumnName="City" />
-          <ScalarProperty Name="Address" ColumnName="Address" />
-          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
-          <ScalarProperty Name="ShipCountry" ColumnName="ShipCountry" />
-          <ScalarProperty Name="ShipPostalCode" ColumnName="ShipPostalCode" />
-          <ScalarProperty Name="ShipRegion" ColumnName="ShipRegion" />
-          <ScalarProperty Name="ShipCity" ColumnName="ShipCity" />
-          <ScalarProperty Name="ShipAddress" ColumnName="ShipAddress" />
-          <ScalarProperty Name="ShipName" ColumnName="ShipName" />
-          <ScalarProperty Name="Freight" ColumnName="Freight" />
-          <ScalarProperty Name="ShipVia" ColumnName="ShipVia" />
-          <ScalarProperty Name="ShippedDate" ColumnName="ShippedDate" />
-          <ScalarProperty Name="RequiredDate" ColumnName="RequiredDate" />
-          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
-          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
-          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Sales_by_Categories">
-      <EntityTypeMapping TypeName="NorthwindModel.Sales_by_Category">
-        <MappingFragment StoreEntitySet="Sales by Category">
-          <ScalarProperty Name="ProductSales" ColumnName="ProductSales" />
-          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="NorthwindModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Sales_Totals_by_Amounts">
-      <EntityTypeMapping TypeName="NorthwindModel.Sales_Totals_by_Amount">
-        <MappingFragment StoreEntitySet="Sales Totals by Amount">
-          <ScalarProperty Name="ShippedDate" ColumnName="ShippedDate" />
-          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
-          <ScalarProperty Name="SaleAmount" ColumnName="SaleAmount" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

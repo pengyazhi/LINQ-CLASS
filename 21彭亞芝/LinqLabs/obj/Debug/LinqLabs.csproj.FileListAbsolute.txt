@@ -243,3 +243,28 @@ D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\D
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\zh-Hant\EntityFramework.resources.dll
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\MyHomeWork.Frm作業_4.resources
 D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CopyComplete
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.exe.config
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.exe
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\LinqLabs.pdb
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.dll
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.xml
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\zh-Hant\EntityFramework.resources.dll
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.AssemblyReference.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.SuggestedBindingRedirects.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmHelloLinq.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLangForLINQ.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLINQ_To_XXX.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLINQ架構介紹_InsideLINQ.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\Starter.FrmLinq_To_Entity.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.Properties.Resources.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_1.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\MyHomeWork.Frm作業_2.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.作業.Frm作業_3.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\MyHomeWork.Frm作業_4.resources
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.GenerateResource.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CoreCompileInputs.cache
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CopyComplete
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.exe
+C:\Users\王恩詠\Desktop\芝\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.pdb

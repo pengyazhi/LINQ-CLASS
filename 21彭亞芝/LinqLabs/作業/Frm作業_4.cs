@@ -162,6 +162,7 @@ namespace MyHomeWork
        NorthwindEntities dbContext = new NorthwindEntities();
         private void btnNWProdPrice_Click(object sender, EventArgs e)
         {
+            Clear();
             var q = dbContext.Products.OrderBy(n => n.UnitPrice).AsEnumerable().
                 GroupBy(n => PriceRange(n)).Select(n => new 
                                                                                     {
@@ -217,6 +218,7 @@ namespace MyHomeWork
 
         private void btnOrderGroupByYear_Click(object sender, EventArgs e)
         {
+            Clear();
             var q = dbContext.Orders.GroupBy(n => n.OrderDate.Value.Year.ToString()).
                 Select(n => new
                 {
@@ -250,6 +252,7 @@ namespace MyHomeWork
 
         private void btnOrderGroupByYM_Click(object sender, EventArgs e)
         {
+            Clear();
             var q = from ym in dbContext.Orders
                     group ym by
                     new
@@ -280,6 +283,86 @@ namespace MyHomeWork
                     this.listView1.Items.Add(item.OrderDate.ToString()).Group = lvg;
                 }
             }
+        }
+
+        private void btnRevenue_Click(object sender, EventArgs e)
+        {
+            var q = from o in dbContext.Orders.AsEnumerable()
+                    from od in dbContext.Order_Details
+                    where o.OrderID == od.OrderID
+                    group new
+                    {
+                        o.OrderID,
+                        o.CustomerID,
+                        Revenue = od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount)
+                    } by od.OrderID into g
+                    select new
+                    {
+                        OrderID = g.Key,
+                        CustomerID = g.Select(n => n.CustomerID),
+                        Total_Revenue = $"{g.Sum(n => n.Revenue):c2}",
+                        Count = g.Count()
+                    };
+            dataGridView1.DataSource = q.ToList();
+            //treeView 
+            foreach(var group in q)
+            {
+                string header = $"OrderID : {group.OrderID}(訂單數 : {group.Count})";
+                TreeNode node = treeView1.Nodes.Add(header) ;
+                node.Nodes.Add($"Total_Revenue : {group.Total_Revenue}");
+            }
+            //listView 
+            foreach (var group in q)
+            {
+                string header = $"OrderID : {group.OrderID}(訂單數 : {group.Count})";
+                ListViewGroup lvg = listView1.Groups.Add(group.OrderID.ToString(), header);
+                listView1.Items.Add(group.Total_Revenue.ToString()).Group = lvg;
+            }
+        }
+
+        private void btnTOP5Sales_Click(object sender, EventArgs e)
+        {
+            var q = from o in dbContext.Orders.AsEnumerable()
+                    from od in dbContext.Order_Details
+                    where o.OrderID == od.OrderID
+                    group new
+                    {
+                        o.EmployeeID,
+                        Revenue = od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount)
+                    } by o.EmployeeID into g
+                    orderby g.Sum(n => n.Revenue) descending
+                    select new
+                    {
+                        EmployeeID = g.Key,
+                        Total_Revenue = $"{g.Sum(n => n.Revenue):c2}",
+                        Count = g.Count()
+                    };
+                    
+            
+            dataGridView1.DataSource = q.Take(5).ToList();
+        }
+
+        private void btnNWProdUnitPriceTOP5_Click(object sender, EventArgs e)
+        {
+            var q = from p in dbContext.Products.AsEnumerable()
+                    from c in dbContext.Categories
+                    where p.CategoryID == c.CategoryID
+                    orderby p.UnitPrice descending
+                    select new
+                    {
+                        c.CategoryName,
+                        p.ProductName,
+                        p.UnitPrice
+                    };
+            dataGridView1.DataSource = q.Take(5).ToList();
+        }
+
+        private void btnAnyUnitPrice_Click(object sender, EventArgs e)
+        {
+            bool isUnitPriceHigherThan300 = dbContext.Products.AsEnumerable().Any(n => n.UnitPrice > 300);
+            
+            MessageBox.Show($"NW產品是否有任何一筆產品單價大於300? {isUnitPriceHigherThan300}");
+                    
         }
     }
 }
