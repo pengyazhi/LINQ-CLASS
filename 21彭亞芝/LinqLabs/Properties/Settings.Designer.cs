@@ -26,7 +26,7 @@ namespace LinqLabs.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=Northwind;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YAZHI\\SQLEXPRESS;Initial Catalog=Northwind;Integrated Security=True")]
         public string NorthwindConnectionString {
             get {
                 return ((string)(this["NorthwindConnectionString"]));
@@ -36,7 +36,8 @@ namespace LinqLabs.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.;Initial Catalog=AdventureWorks2019;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=YAZHI\\SQLEXPRESS;Initial Catalog=AdventureWorks2019;Integrated Securi" +
+            "ty=True")]
         public string AdventureWorks2019ConnectionString {
             get {
                 return ((string)(this["AdventureWorks2019ConnectionString"]));

@@ -236,3 +236,10 @@ C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝\LinqLabs\bin\Debug\EntityFramewo
 C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝\LinqLabs\bin\Debug\zh-Hant\EntityFramework.resources.dll
 C:\Users\王恩詠\Desktop\芝\LINQ\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CopyComplete
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.dll
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.SqlServer.dll
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.xml
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\EntityFramework.SqlServer.xml
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\MyHomeWork.Frm作業_4.resources
+D:\yzyz8\OneDrive\桌面\Web operator\LINQ\LINQ-CLASS\21彭亞芝\LinqLabs\obj\Debug\LinqLabs.csproj.CopyComplete

@@ -15,12 +15,14 @@ namespace LinqLabs
 using System;
     using System.Collections.Generic;
     
-public partial class Order_Detail
+public partial class Order_Details_Extended
 {
 
     public int OrderID { get; set; }
 
     public int ProductID { get; set; }
+
+    public string ProductName { get; set; }
 
     public decimal UnitPrice { get; set; }
 
@@ -28,11 +30,7 @@ public partial class Order_Detail
 
     public float Discount { get; set; }
 
-
-
-    public virtual Order Order { get; set; }
-
-    public virtual Product Product { get; set; }
+    public Nullable<decimal> ExtendedPrice { get; set; }
 
 }
 

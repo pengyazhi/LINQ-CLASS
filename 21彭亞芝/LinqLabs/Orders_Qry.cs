@@ -15,17 +15,8 @@ namespace LinqLabs
 using System;
     using System.Collections.Generic;
     
-public partial class Order
+public partial class Orders_Qry
 {
-
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-    public Order()
-    {
-
-        this.Order_Details = new HashSet<Order_Detail>();
-
-    }
-
 
     public int OrderID { get; set; }
 
@@ -55,11 +46,17 @@ public partial class Order
 
     public string ShipCountry { get; set; }
 
+    public string CompanyName { get; set; }
 
+    public string Address { get; set; }
 
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    public string City { get; set; }
 
-    public virtual ICollection<Order_Detail> Order_Details { get; set; }
+    public string Region { get; set; }
+
+    public string PostalCode { get; set; }
+
+    public string Country { get; set; }
 
 }
 

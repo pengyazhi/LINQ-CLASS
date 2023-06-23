@@ -82,7 +82,7 @@ namespace MyHomeWork
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(577, 250);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(481, 250);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lblDetails
@@ -94,7 +94,7 @@ namespace MyHomeWork
             this.lblDetails.Location = new System.Drawing.Point(4, 0);
             this.lblDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(569, 40);
+            this.lblDetails.Size = new System.Drawing.Size(473, 40);
             this.lblDetails.TabIndex = 102;
             this.lblDetails.Text = "Details";
             // 
@@ -107,7 +107,7 @@ namespace MyHomeWork
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(567, 200);
+            this.dataGridView2.Size = new System.Drawing.Size(471, 200);
             this.dataGridView2.TabIndex = 100;
             // 
             // tableLayoutPanel3
@@ -123,7 +123,7 @@ namespace MyHomeWork
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1610, 794);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1444, 794);
             this.tableLayoutPanel3.TabIndex = 133;
             // 
             // tableLayoutPanel4
@@ -141,7 +141,7 @@ namespace MyHomeWork
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1016, 786);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(850, 786);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // splitContainer2
@@ -159,8 +159,8 @@ namespace MyHomeWork
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer2.Size = new System.Drawing.Size(1008, 254);
-            this.splitContainer2.SplitterDistance = 422;
+            this.splitContainer2.Size = new System.Drawing.Size(842, 254);
+            this.splitContainer2.SplitterDistance = 352;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 131;
             // 
@@ -177,7 +177,7 @@ namespace MyHomeWork
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(418, 250);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(348, 250);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lblMaster
@@ -189,7 +189,7 @@ namespace MyHomeWork
             this.lblMaster.Location = new System.Drawing.Point(4, 0);
             this.lblMaster.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaster.Name = "lblMaster";
-            this.lblMaster.Size = new System.Drawing.Size(410, 40);
+            this.lblMaster.Size = new System.Drawing.Size(340, 40);
             this.lblMaster.TabIndex = 101;
             this.lblMaster.Text = "Master";
             // 
@@ -202,7 +202,7 @@ namespace MyHomeWork
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(408, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(338, 200);
             this.dataGridView1.TabIndex = 71;
             // 
             // treeView1
@@ -211,7 +211,7 @@ namespace MyHomeWork
             this.treeView1.Location = new System.Drawing.Point(4, 266);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(1008, 254);
+            this.treeView1.Size = new System.Drawing.Size(842, 254);
             this.treeView1.TabIndex = 130;
             // 
             // listView1
@@ -220,7 +220,7 @@ namespace MyHomeWork
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(3, 527);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1010, 256);
+            this.listView1.Size = new System.Drawing.Size(844, 256);
             this.listView1.TabIndex = 132;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
@@ -276,7 +276,7 @@ namespace MyHomeWork
             this.label3.Location = new System.Drawing.Point(4, 266);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(215, 22);
+            this.label3.Size = new System.Drawing.Size(143, 16);
             this.label3.TabIndex = 134;
             this.label3.Text = "LINQ to Northwind Entity";
             // 
@@ -290,6 +290,7 @@ namespace MyHomeWork
             this.btnOrderGroupByYM.TabIndex = 133;
             this.btnOrderGroupByYM.Text = " Orders -  Group by 年 / 月";
             this.btnOrderGroupByYM.UseVisualStyleBackColor = false;
+            this.btnOrderGroupByYM.Click += new System.EventHandler(this.btnOrderGroupByYM_Click);
             // 
             // label4
             // 
@@ -297,7 +298,7 @@ namespace MyHomeWork
             this.label4.Location = new System.Drawing.Point(4, 22);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(145, 22);
+            this.label4.Size = new System.Drawing.Size(97, 16);
             this.label4.TabIndex = 126;
             this.label4.Text = "LINQ - GroupBy";
             // 
@@ -353,7 +354,7 @@ namespace MyHomeWork
             this.label1.Location = new System.Drawing.Point(10, 123);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 22);
+            this.label1.Size = new System.Drawing.Size(102, 16);
             this.label1.TabIndex = 128;
             this.label1.Text = "LINQ to FileInfo[]";
             // 
@@ -417,12 +418,13 @@ namespace MyHomeWork
             this.btnOrderGroupByYear.TabIndex = 121;
             this.btnOrderGroupByYear.Text = " Orders -  Group by 年";
             this.btnOrderGroupByYear.UseVisualStyleBackColor = false;
+            this.btnOrderGroupByYear.Click += new System.EventHandler(this.btnOrderGroupByYear_Click);
             // 
             // Frm作業_4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1610, 794);
+            this.ClientSize = new System.Drawing.Size(1444, 794);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.Margin = new System.Windows.Forms.Padding(4);

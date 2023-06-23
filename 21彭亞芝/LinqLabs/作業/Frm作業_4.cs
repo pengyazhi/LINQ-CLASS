@@ -163,7 +163,13 @@ namespace MyHomeWork
         private void btnNWProdPrice_Click(object sender, EventArgs e)
         {
             var q = dbContext.Products.OrderBy(n => n.UnitPrice).AsEnumerable().
-                GroupBy(n => PriceRange(n)).Select(n => new {PriceLevel = n.Key,Count = n.Count(), ProductName= n });
+                GroupBy(n => PriceRange(n)).Select(n => new 
+                                                                                    {
+                                                                                        PriceLevel = n.Key,
+                                                                                        Count = n.Count(),
+                                                                                        ProductName= n
+                                                                                    }
+                                                                                );
             dataGridView1.DataSource = q.ToList();
             //treeView
             foreach(var f in q)
@@ -177,24 +183,102 @@ namespace MyHomeWork
                 
             }
             //listView
+            foreach(var f in q)
+            {
+                string header = $"{f.PriceLevel}({f.Count})";
+                ListViewGroup lvg = this.listView1.Groups.Add(f.PriceLevel, header);
+                foreach(var item in f.ProductName) 
+                {
+                    this.listView1.Items.Add(item.ProductName).Group = lvg;
+                }
+            }
         }
 
         private string PriceRange(Product n)
         {
+            //將Products的UnitPrice先由小到大排序
             var sortNums = dbContext.Products.OrderBy(x => x.UnitPrice).ToList();
+            //將資料分成三等份,前33%為LowPrice,中間33%MiddlePrice,剩下的為HighPrice
             int range = Convert.ToInt32(sortNums.Count()) / 3;
-            decimal? productUnitPrice = n.UnitPrice;
-            if (productUnitPrice < sortNums[range].UnitPrice)
+            //decimal? productUnitPrice = n.UnitPrice;
+            if (n.UnitPrice < sortNums[range].UnitPrice)
             {
                 return "LowPrice";
             }
-            else if (productUnitPrice < sortNums[range].UnitPrice*2)
+            else if (n.UnitPrice < sortNums[range].UnitPrice*2)
             {
                 return "MiddlePrice";
             }
             else
             {
                 return "HighPrice";
+            }
+        }
+
+        private void btnOrderGroupByYear_Click(object sender, EventArgs e)
+        {
+            var q = dbContext.Orders.GroupBy(n => n.OrderDate.Value.Year.ToString()).
+                Select(n => new
+                {
+                    Year = n.Key,
+                    Count = n.Count(),
+                    n
+                });
+            dataGridView1.DataSource = q.ToList();
+            //treeView
+            foreach (var y in q)
+            {
+                string header = $"{y.Year}({y.Count})";
+                TreeNode node = this.treeView1.Nodes.Add(header);
+                foreach (var item in y.n)
+                {
+                    node.Nodes.Add(item.OrderDate.ToString());
+                }
+
+            }
+            //listView
+            foreach (var y in q)
+            {
+                string header = $"{y.Year}({y.Count})";
+                ListViewGroup lvg = this.listView1.Groups.Add(y.Year, header);
+                foreach (var item in y.n)
+                {
+                    this.listView1.Items.Add(item.OrderDate.ToString()).Group = lvg;
+                }
+            }
+        }
+
+        private void btnOrderGroupByYM_Click(object sender, EventArgs e)
+        {
+            var q = from ym in dbContext.Orders
+                    group ym by
+                    new
+                    {
+                        ym.OrderDate.Value.Year,
+                        ym.OrderDate.Value.Month
+                    } into g
+                    select new { Year_Month = g.Key, Count = g.Count(), Result = g };
+            dataGridView1.DataSource = q.ToList();
+            //treeView
+            foreach (var ym in q)
+            {
+                string header = $"{ym.Year_Month}({ym.Count})";
+                TreeNode node = this.treeView1.Nodes.Add(header);
+                foreach (var item in ym.Result)
+                {
+                    node.Nodes.Add(item.OrderDate.ToString());
+                }
+
+            }
+            //listView
+            foreach (var ym in q)
+            {
+                string header = $"{ym.Year_Month}({ym.Count})";
+                ListViewGroup lvg = this.listView1.Groups.Add(ym.Year_Month.ToString(), header);
+                foreach (var item in ym.Result)
+                {
+                    this.listView1.Items.Add(item.OrderDate.ToString()).Group = lvg;
+                }
             }
         }
     }
