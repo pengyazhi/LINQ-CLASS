@@ -29,6 +29,9 @@ namespace MyHomeWork
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblDetails = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -42,7 +45,7 @@ namespace MyHomeWork
             this.listView1 = new System.Windows.Forms.ListView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.button34 = new System.Windows.Forms.Button();
+            this.btnAnalysis = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.btnOrderGroupByYM = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,6 +59,8 @@ namespace MyHomeWork
             this.btnFileSize = new System.Windows.Forms.Button();
             this.btnTOP5Sales = new System.Windows.Forms.Button();
             this.btnOrderGroupByYear = new System.Windows.Forms.Button();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
@@ -67,6 +72,11 @@ namespace MyHomeWork
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -82,7 +92,7 @@ namespace MyHomeWork
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(481, 250);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(432, 271);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // lblDetails
@@ -94,7 +104,7 @@ namespace MyHomeWork
             this.lblDetails.Location = new System.Drawing.Point(4, 0);
             this.lblDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDetails.Name = "lblDetails";
-            this.lblDetails.Size = new System.Drawing.Size(473, 40);
+            this.lblDetails.Size = new System.Drawing.Size(424, 40);
             this.lblDetails.TabIndex = 102;
             this.lblDetails.Text = "Details";
             // 
@@ -107,7 +117,7 @@ namespace MyHomeWork
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(471, 200);
+            this.dataGridView2.Size = new System.Drawing.Size(422, 221);
             this.dataGridView2.TabIndex = 100;
             // 
             // tableLayoutPanel3
@@ -131,16 +141,16 @@ namespace MyHomeWork
             this.tableLayoutPanel4.ColumnCount = 1;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Controls.Add(this.splitContainer2, 0, 0);
-            this.tableLayoutPanel4.Controls.Add(this.treeView1, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.listView1, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.splitContainer1, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(590, 4);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 36.13232F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.31552F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 31.67939F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(850, 786);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
@@ -159,8 +169,8 @@ namespace MyHomeWork
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel2);
-            this.splitContainer2.Size = new System.Drawing.Size(842, 254);
-            this.splitContainer2.SplitterDistance = 352;
+            this.splitContainer2.Size = new System.Drawing.Size(842, 275);
+            this.splitContainer2.SplitterDistance = 401;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 131;
             // 
@@ -177,7 +187,7 @@ namespace MyHomeWork
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(348, 250);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(397, 271);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lblMaster
@@ -189,7 +199,7 @@ namespace MyHomeWork
             this.lblMaster.Location = new System.Drawing.Point(4, 0);
             this.lblMaster.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaster.Name = "lblMaster";
-            this.lblMaster.Size = new System.Drawing.Size(340, 40);
+            this.lblMaster.Size = new System.Drawing.Size(389, 40);
             this.lblMaster.TabIndex = 101;
             this.lblMaster.Text = "Master";
             // 
@@ -202,25 +212,25 @@ namespace MyHomeWork
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(338, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(387, 221);
             this.dataGridView1.TabIndex = 71;
             // 
             // treeView1
             // 
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.Location = new System.Drawing.Point(4, 266);
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Margin = new System.Windows.Forms.Padding(4);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(842, 254);
+            this.treeView1.Size = new System.Drawing.Size(395, 247);
             this.treeView1.TabIndex = 130;
             // 
             // listView1
             // 
             this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(3, 527);
+            this.listView1.Location = new System.Drawing.Point(3, 539);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(844, 256);
+            this.listView1.Size = new System.Drawing.Size(844, 244);
             this.listView1.TabIndex = 132;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.SmallIcon;
@@ -228,7 +238,7 @@ namespace MyHomeWork
             // panel1
             // 
             this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button34);
+            this.panel1.Controls.Add(this.btnAnalysis);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnOrderGroupByYM);
             this.panel1.Controls.Add(this.label4);
@@ -260,16 +270,17 @@ namespace MyHomeWork
             this.button3.Text = "年 銷售成長率";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button34
+            // btnAnalysis
             // 
-            this.button34.ForeColor = System.Drawing.Color.Black;
-            this.button34.Location = new System.Drawing.Point(24, 681);
-            this.button34.Margin = new System.Windows.Forms.Padding(4);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(375, 51);
-            this.button34.TabIndex = 140;
-            this.button34.Text = "銷售分析 &&　plot";
-            this.button34.UseVisualStyleBackColor = false;
+            this.btnAnalysis.ForeColor = System.Drawing.Color.Black;
+            this.btnAnalysis.Location = new System.Drawing.Point(24, 681);
+            this.btnAnalysis.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnalysis.Name = "btnAnalysis";
+            this.btnAnalysis.Size = new System.Drawing.Size(375, 51);
+            this.btnAnalysis.TabIndex = 140;
+            this.btnAnalysis.Text = "銷售分析 &&　plot";
+            this.btnAnalysis.UseVisualStyleBackColor = false;
+            this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
             // 
             // label3
             // 
@@ -425,6 +436,43 @@ namespace MyHomeWork
             this.btnOrderGroupByYear.UseVisualStyleBackColor = false;
             this.btnOrderGroupByYear.Click += new System.EventHandler(this.btnOrderGroupByYear_Click);
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(3, 286);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.treeView1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.chart1);
+            this.splitContainer1.Size = new System.Drawing.Size(844, 247);
+            this.splitContainer1.SplitterDistance = 395;
+            this.splitContainer1.TabIndex = 133;
+            // 
+            // chart1
+            // 
+            chartArea1.AxisX.LabelAutoFitStyle = ((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep30 | System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.WordWrap)));
+            chartArea1.AxisX.LabelStyle.Interval = 1D;
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 0);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(445, 247);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
             // Frm作業_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -447,6 +495,11 @@ namespace MyHomeWork
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,7 +531,9 @@ namespace MyHomeWork
         private System.Windows.Forms.Button btnTOP5Sales;
         private System.Windows.Forms.Button btnOrderGroupByYear;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button btnAnalysis;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

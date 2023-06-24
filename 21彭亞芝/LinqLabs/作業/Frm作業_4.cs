@@ -31,31 +31,31 @@ namespace MyHomeWork
         //for classifyNums_Click 分類數字
         private void ClassifyNum(int[] nums)
         {
-            
-            List<string> categories = new List<string>{"小","中","大"};
+
+            List<string> categories = new List<string> { "小", "中", "大" };
             foreach (string c in categories)
             {
                 TreeNode node = treeView1.Nodes.Add(c);
                 foreach (int n in nums)
                 {
-                    if(c == "小" &&  n <= 5)
+                    if (c == "小" && n <= 5)
                     {
                         node.Nodes.Add(n.ToString());
                     }
-                    else if (c=="中" && n>5 && n <= 10)
+                    else if (c == "中" && n > 5 && n <= 10)
                     {
                         node.Nodes.Add(n.ToString());
                     }
-                    else if(c== "大" && n>10)
+                    else if (c == "大" && n > 10)
                     {
                         node.Nodes.Add(n.ToString());
                     }
                 }
-                
+
             }
 
         }
-        
+
         //載入C槽檔案
         FileInfo[] files;
         DirectoryInfo dir;
@@ -78,35 +78,35 @@ namespace MyHomeWork
             var q = from f in files
                     orderby f.Length descending
                     group f by FileLength(f) into g
-                    select new {fileSzie = g.Key,Count = g.Count(), file = g};
+                    select new { fileSzie = g.Key, Count = g.Count(), file = g };
             dataGridView1.DataSource = q.ToList();
 
-            
+
             //TreeView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 string header = $"{f.fileSzie}({f.Count})";
                 TreeNode parentNode = this.treeView1.Nodes.Add(header);
-                foreach(var item in f.file)
+                foreach (var item in f.file)
                 {
                     parentNode.Nodes.Add(item.ToString());
                 }
             }
-            
+
             //ListView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 //先設定好ListViewGroup的大群及名稱
                 string header = $"{f.fileSzie}({f.Count})";
                 ListViewGroup lvg = listView1.Groups.Add(f.fileSzie, header);
-                foreach(var item in f.file)
+                foreach (var item in f.file)
                 {
                     //將item指派到給lvg這個Group
                     this.listView1.Items.Add(item.ToString()).Group = lvg;
                 }
             }
 
-         
+
         }
 
         private string FileLength(FileInfo f)
@@ -131,64 +131,64 @@ namespace MyHomeWork
             LoadFiles();
             var q = from f in files
                     orderby f.CreationTime descending
-            group f by f.CreationTime.Year into g
-                    select new { Year = g.Key, Count = g.Count(), file =g };
+                    group f by f.CreationTime.Year into g
+                    select new { Year = g.Key, Count = g.Count(), file = g };
             dataGridView1.DataSource = q.ToList();
 
             //TreeView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 string header = $"{f.Year}({f.Count})";
                 TreeNode parentNode = this.treeView1.Nodes.Add(header);
-                foreach(var item in f.file)
+                foreach (var item in f.file)
                 {
                     parentNode.Nodes.Add(item.ToString());
                 }
             }
             //ListView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 string header = $"{f.Year}({f.Count})";
-                ListViewGroup lvg= this.listView1.Groups.Add(f.Year.ToString(),header);
+                ListViewGroup lvg = this.listView1.Groups.Add(f.Year.ToString(), header);
                 foreach (var item in f.file)
                 {
                     this.listView1.Items.Add(item.ToString()).Group = lvg;
                 }
             }
         }
-       
+
         //LINQ to Northwind Entity
         //LINQ的資料來源
-       NorthwindEntities dbContext = new NorthwindEntities();
+        NorthwindEntities dbContext = new NorthwindEntities();
         private void btnNWProdPrice_Click(object sender, EventArgs e)
         {
             Clear();
             var q = dbContext.Products.OrderBy(n => n.UnitPrice).AsEnumerable().
-                GroupBy(n => PriceRange(n)).Select(n => new 
-                                                                                    {
-                                                                                        PriceLevel = n.Key,
-                                                                                        Count = n.Count(),
-                                                                                        ProductName= n
-                                                                                    }
+                GroupBy(n => PriceRange(n)).Select(n => new
+                {
+                    PriceLevel = n.Key,
+                    Count = n.Count(),
+                    ProductName = n
+                }
                                                                                 );
             dataGridView1.DataSource = q.ToList();
             //treeView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 string header = $"{f.PriceLevel}({f.Count})";
                 TreeNode node = this.treeView1.Nodes.Add(header);
-                foreach(var item in f.ProductName)
+                foreach (var item in f.ProductName)
                 {
                     node.Nodes.Add(item.ProductName);
                 }
-                
+
             }
             //listView
-            foreach(var f in q)
+            foreach (var f in q)
             {
                 string header = $"{f.PriceLevel}({f.Count})";
                 ListViewGroup lvg = this.listView1.Groups.Add(f.PriceLevel, header);
-                foreach(var item in f.ProductName) 
+                foreach (var item in f.ProductName)
                 {
                     this.listView1.Items.Add(item.ProductName).Group = lvg;
                 }
@@ -206,7 +206,7 @@ namespace MyHomeWork
             {
                 return "LowPrice";
             }
-            else if (n.UnitPrice < sortNums[range].UnitPrice*2)
+            else if (n.UnitPrice < sortNums[range].UnitPrice * 2)
             {
                 return "MiddlePrice";
             }
@@ -305,10 +305,10 @@ namespace MyHomeWork
                     };
             dataGridView1.DataSource = q.ToList();
             //treeView 
-            foreach(var group in q)
+            foreach (var group in q)
             {
                 string header = $"OrderID : {group.OrderID}(訂單數 : {group.Count})";
-                TreeNode node = treeView1.Nodes.Add(header) ;
+                TreeNode node = treeView1.Nodes.Add(header);
                 node.Nodes.Add($"Total_Revenue : {group.Total_Revenue}");
             }
             //listView 
@@ -337,8 +337,8 @@ namespace MyHomeWork
                         Total_Revenue = $"{g.Sum(n => n.Revenue):c2}",
                         Count = g.Count()
                     };
-                    
-            
+
+
             dataGridView1.DataSource = q.Take(5).ToList();
         }
 
@@ -360,9 +360,48 @@ namespace MyHomeWork
         private void btnAnyUnitPrice_Click(object sender, EventArgs e)
         {
             bool isUnitPriceHigherThan300 = dbContext.Products.AsEnumerable().Any(n => n.UnitPrice > 300);
-            
+
             MessageBox.Show($"NW產品是否有任何一筆產品單價大於300? {isUnitPriceHigherThan300}");
-                    
+
+        }
+
+        private void btnAnalysis_Click(object sender, EventArgs e)
+        {
+            //每年+月銷售總額
+            //group by 年&月 每筆orderID銷售 再算出總額 
+
+            //篩選出Order_Details的id跟銷售額
+            var TMP = from od in dbContext.Order_Details.AsEnumerable()
+                      select new { od.OrderID, Revenue = od.UnitPrice * od.Quantity * (1 - (decimal)od.Discount) };
+
+
+            var q = from o in dbContext.Orders.AsEnumerable()
+                    from od in TMP //OrderID,Revenue
+                    where o.OrderID == od.OrderID
+                    group new
+                    {
+                        o.OrderDate.Value.Year,
+                        o.OrderDate.Value.Month,
+                        od.Revenue
+                    } by new { o.OrderDate.Value.Year,
+                        o.OrderDate.Value.Month } into g
+                    select new { Year_Month = g.Key.Year.ToString() +"-"+ g.Key.Month.ToString(),
+                        Revenue = $"{g.Sum(n => n.Revenue):c2}"};
+            dataGridView1.DataSource = q.ToList();
+            foreach (var item in q)
+            {
+                item.ToString();
+
+            }
+            chart1.DataSource = q;
+            chart1.Series.Clear();
+            chart1.Series.Add("總銷售額");
+            chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column;
+            chart1.Series[0].XValueMember = "Year_Month";
+            chart1.Series[0].YValueMembers = "Revenue";
+            chart1.Titles.Add("每年/月銷售總額");
+            
+
         }
     }
 }
